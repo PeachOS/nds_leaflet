@@ -29,7 +29,7 @@ function (L, $, ko, sidebar, tileid, TileGrid, require) {
         baseLayers[t.name] = L.tileLayer(t.url, {attribution: t.attribution + ', ' + freepik, id: t.id, subdomains: t.subdomains});
     }
 
-	  var map = L.map('map', {center: [48.137270, 11.575506], zoom: 15, layers: [baseLayers['OSM']], attributionControl: true});
+	  var map = L.map('map', {center: [52.52, 13.41], zoom: 14, layers: [baseLayers['OSM']], attributionControl: true});
     map.attributionControl.setPosition('bottomleft');
 
     // Tiles grid
